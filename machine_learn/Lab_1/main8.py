@@ -1,7 +1,10 @@
-number = input("Введите число от 0 до 10")
+def print_pyramid(n: int) -> None:
+    for i in range(1, n + 1):
+        up = ''.join(str(x) for x in range(1, i + 1))
+        down = ''.join(str(x) for x in range(i - 1, 0, -1))
 
-if number.isdigit():
-    number = int(number)
-    for _ in range(number):
+        print(' ' * (n - i) + up + down)
 
-        print("* " * number)
+
+n = 5
+print_pyramid(n)
