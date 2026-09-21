@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <title>Моё первое PWA</title>
+        <link rel="manifest" href="/manifest.json">
+        <link rel="stylesheet" href="/styles.css">
+        <script defer src="/js/theme.js"></script>
+        <script defer src="/js/navigator-sw.js"></script>
+    </head>
+    <body>
+        <button class="theme-toggle" onclick="toggleTheme()">☀️</button>
+        
+        <!-- ПЕРВАЯ. НЕ МОЯ КАРТОЧКА -->
+        <div class="product-card">
+            <div class="product-header">
+                <div class="product-image">📱</div>
+                <div>
+                    <h3 class="product-title">Смартфон XZY</h3>
+                    <p class="product-description">Отличный выбор для повседневных задач</p>
+                </div>
+            </div>
+            
+            <div class="product-footer">
+                <span class="product-price">29 990 ₽</span>
+                <button class="product-button">Купить</button>
+            </div>
+        </div>
+
+        <!-- ВТОРАЯ. МОЯ КАРТОЧКА -->
+         <div class="product-card">
+            <div class="product-header">
+                <div class="product-image">💻</div>
+                <div>
+                    <h3 class="product-title">Ноутбук Asus tuf gaming a15</h3>
+                    <p class="product-description">Отличный выбор для игр и программирования</p>
+                </div>
+            </div>
+            
+            <div class="product-footer">
+                <span class="product-price">89 990 ₽</span>
+                <button class="product-button">Купить</button>
+            </div>
+        </div>
+
+    </body>
+</html>

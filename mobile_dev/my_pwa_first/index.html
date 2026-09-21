@@ -1,22 +1,57 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Моё первое PWA</title>
-  <link rel="manifest" href="/manifest.json">
-</head>
-<body>
-  <h1>Привет, мобильный мир!</h1>
-  <p>Это приложение работает офлайн.</p>
-
-  <script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS.css">
+        <title>Моё первое PWA</title>
+        <link rel="manifest" href="/manifest.json">
+    </head>
+    <body>
+        <h1>Привет, мобильный мир!</h1>
+        <p>
+            Сегодня:
+            <span id="dateDisplay"></span>
+        </p>
+        <script src="js/current_data.js"></script>
+        <p>Количество посещений:
+            <span id="visitCount"></span>
+        </p>
+        <script src="js/visit_counter.js"></script>
+        <p>Это приложение работает офлайн.</p>
+        <h2>Меня зовут Игорь</h2>
+        <p>Я проживаю в Казахстане в городе "Тайынша"</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFSNUXXc8j_t2mYwAwtbsRJAY0zCzma6YvoYpQQe0GWg&s=10" alt="Картинка тайынши">
+        <p>А это достопримечательность моего города</p>
+        <p>Мои любимые технологии:</p>
+        <ul>
+            <li>Python + Flask</li>
+            <li>pywebview для вывода сайта в окно</li>
+            <li>buildozer для создания apk файла, из python проекта</li>
+        </ul>
+        <button id="counterBtn">Нажатий: 0</button>
+        <script src="js/click_counter.js"></script>
+        <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/sw.js')
+      navigator.serviceWorker.register('/sw.js', )
         .then(() => console.log('SW зарегистрирован'))
         .catch(err => console.log('Ошибка SW', err));
     }
-  </script>
-</body>
+        </script>
+        <button onclick="toggleTheme()">Переключить тему</button>
+        <script>
+            let isDark = false;
+
+            function toggleTheme() {
+                isDark = !isDark;
+                document.body.className = isDark ? 'dark' : 'light';
+            }
+        </script>
+        <h2>Мои заметки</h2>
+        <input type="text" id="noteInput" placeholder="Введите заметку...">
+        <button onclick="saveNote()">Сохранить</button>
+        <p id="savedNote"></p>
+        <script src="js/save_note.js"></script>
+    </body>
 </html>
 <!-- npx localtunnel --port 5500 -->
