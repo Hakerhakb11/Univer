@@ -3,12 +3,18 @@ import random
 
 def printMatrix(matrix: list[list[int]]) -> None:
     for row in matrix:
-        formatted_row = "".join(f"{num:>4}" for num in row)
-        print(formatted_row)
+        template = "{:>4}" * len(row)
+        print(template.format(*row))
 
 
-if __name__ == "__main__":
-    N, M = 5, 6
-    matrix = [[random.randint(20, 80) for _ in range(M)] for _ in range(N)]
+N, M = 5, 6
 
-    printMatrix(matrix)
+matrix = []
+for i in range(N):
+    row = []
+    for j in range(M):
+        num = random.randint(20, 80)
+        row.append(num)
+    matrix.append(row)
+
+printMatrix(matrix)
