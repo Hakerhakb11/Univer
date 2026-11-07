@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <meta name="theme-color" content="#090d16">
+        <title>Погодное приложение</title>
+        <link rel="manifest" href="/manifest.json">
+        <link rel="stylesheet" href="/styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/localforage@1.10.0/dist/localforage.min.js"></script>
+    </head>
+    <body>
+        <!-- Фоновые анимированные сферы для создания эффекта северного сияния -->
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+        <div class="app-layout">
+            <!-- Индикатор сети с пульсирующей точкой -->
+            <header class="app-topbar">
+                <div id="network-status" class="status-pill">
+                    <span class="status-dot"></span>
+                    <span class="status-text">Онлайн</span>
+                </div>
+            </header>
+            <!-- Главная стеклянная карточка -->
+            <main class="weather-card">
+                <div class="card-header">
+                    <span class="badge">PWA Weather</span>
+                    <h1 class="app-title">Прогноз погоды</h1>
+                </div>
+                <!-- Форма поиска -->
+                <form id="weather-form" class="search-form">
+                    <div class="input-wrapper">
+                        <svg
+                            class="search-icon"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line
+                                x1="21"
+                                y1="21"
+                                x2="16.65"
+                                y2="16.65"
+                            ></line>
+                        </svg>
+                        <input
+                            type="text"
+                            id="city-input"
+                            placeholder="Введите город (напр. Лондон)"
+                            autocomplete="off"
+                            required
+                        >
+                    </div>
+                    <button type="submit" class="submit-btn" id="search-btn">
+                        <span>Найти</span>
+                        <svg
+                            class="arrow-icon"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                </form>
+                <!-- Блок вывода погоды -->
+                <div id="weather-container" class="weather-display">
+                    <div class="weather-icon-placeholder">✨</div>
+                    <h2 id="city-name" class="city-name"></h2>
+                    <p id="temperature" class="temperature-text">Введите город и нажмите «Найти»</p>
+                </div>
+            </main>
+        </div>
+        <script src="/js/storage.js"></script>
+        <script src="/js/network.js"></script>
+        <script src="/js/app.js"></script>
+        <script src="/js/navigator-sw.js"></script>
+    </body>
+</html>

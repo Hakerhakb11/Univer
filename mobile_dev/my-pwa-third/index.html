@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <title>Моё третье PWA</title>
+        <link rel="manifest" href="/manifest.json">
+        <link rel="stylesheet" href="/styles.css">
+
+        <script defer src="/js/navigator-sw.js"></script>
+        <script defer src="/js/follow.js"></script>
+    </head>
+    <body>
+        <div class="profile-card">
+            <div class="profile-header">
+                <div class="profile-avatar">👩</div>
+                <div class="profile-info">
+                    <h2>Анна Иванова</h2>
+                    <p class="profile-status">Frontend-разработчик</p>
+                </div>
+            </div>
+            
+            <div class="profile-stats">
+                <div class="stat-info">
+                    <h2>128</h2>
+                    <p class="profile-status">постов</p>
+                </div>
+
+                <div class="stat-info">
+                    <h2>12</h2>
+                    <p class="profile-status">подписчиков</p>
+                </div>
+
+                <div class="stat-info">
+                    <h2>340</h2>
+                    <p class="profile-status">подписок</p>
+                </div>
+            </div>
+
+            <button class="profile-button" onclick="toggleFollow()">Подписаться</button>
+        </div>
+
+    </body>
+</html>
