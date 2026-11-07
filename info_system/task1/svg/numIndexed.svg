@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="29" height="42">
+<text x="0" y="0" font-family="monospace" font-size="20" fill="white" dominant-baseline="hanging">b</text>
+<g transform="scale(0.7)">
+<text x="23" y="11" font-family="monospace" font-size="20" fill="white" dominant-baseline="hanging">a</text>
+<line x1="17" y1="35" x2="41" y2="35" stroke="white" stroke-width="2"/>
+<text x="23" y="39" font-family="monospace" font-size="20" fill="white" dominant-baseline="hanging">b</text>
+</g>
+</svg>

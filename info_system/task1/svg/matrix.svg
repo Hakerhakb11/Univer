@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="112" height="116">
+<path d="M 8 0 Q -8 58 8 116" stroke="white" fill="none" stroke-width="2"/>
+<path d="M 104 0 Q 120 58 104 116" stroke="white" fill="none" stroke-width="2"/>
+<text x="20" y="20" font-family="monospace" font-size="20" fill="white" dominant-baseline="hanging">a</text>
+<text x="56" y="6" font-family="monospace" font-size="20" fill="white" dominant-baseline="hanging">a</text>
+<line x1="50" y1="30" x2="74" y2="30" stroke="white" stroke-width="2"/>
+<text x="56" y="34" font-family="monospace" font-size="20" fill="white" dominant-baseline="hanging">b</text>
+<text x="86" y="20" font-family="monospace" font-size="20" fill="white" dominant-baseline="hanging">b</text>
+<text x="20" y="62" font-family="monospace" font-size="20" fill="white" dominant-baseline="hanging">a</text>
+<line x1="14" y1="86" x2="38" y2="86" stroke="white" stroke-width="2"/>
+<text x="20" y="90" font-family="monospace" font-size="20" fill="white" dominant-baseline="hanging">b</text>
+<text x="56" y="76" font-family="monospace" font-size="20" fill="white" dominant-baseline="hanging">b</text>
+<text x="86" y="76" font-family="monospace" font-size="20" fill="white" dominant-baseline="hanging">a</text>
+</svg>

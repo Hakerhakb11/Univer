@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="272" height="118">
+<path d="M 8 0 Q -8 58 8 116" stroke="white" fill="none" stroke-width="2"/>
+<path d="M 104 0 Q 120 58 104 116" stroke="white" fill="none" stroke-width="2"/>
+<text x="20" y="20" font-family="monospace" font-size="20" fill="white" dominant-baseline="hanging">a</text>
+<text x="56" y="6" font-family="monospace" font-size="20" fill="white" dominant-baseline="hanging">a</text>
+<line x1="50" y1="30" x2="74" y2="30" stroke="white" stroke-width="2"/>
+<text x="56" y="34" font-family="monospace" font-size="20" fill="white" dominant-baseline="hanging">b</text>
+<text x="86" y="20" font-family="monospace" font-size="20" fill="white" dominant-baseline="hanging">b</text>
+<text x="20" y="62" font-family="monospace" font-size="20" fill="white" dominant-baseline="hanging">a</text>
+<line x1="14" y1="86" x2="38" y2="86" stroke="white" stroke-width="2"/>
+<text x="20" y="90" font-family="monospace" font-size="20" fill="white" dominant-baseline="hanging">b</text>
+<text x="56" y="76" font-family="monospace" font-size="20" fill="white" dominant-baseline="hanging">b</text>
+<text x="86" y="76" font-family="monospace" font-size="20" fill="white" dominant-baseline="hanging">a</text>
+<g transform="scale(0.7)">
+<path d="M 168 11 Q 152 89 168 168" stroke="white" fill="none" stroke-width="2"/>
+<path d="M 381 11 Q 397 89 381 168" stroke="white" fill="none" stroke-width="2"/>
+<text x="174" y="20" font-family="monospace" font-size="20" fill="white" dominant-baseline="hanging">b</text>
+<g transform="scale(0.7)">
+<text x="272" y="40" font-family="monospace" font-size="20" fill="white" dominant-baseline="hanging">a</text>
+<line x1="266" y1="64" x2="290" y2="64" stroke="white" stroke-width="2"/>
+<text x="272" y="68" font-family="monospace" font-size="20" fill="white" dominant-baseline="hanging">b</text>
+</g>
+<text x="277" y="17" font-family="monospace" font-size="20" fill="white" dominant-baseline="hanging">a</text>
+<line x1="271" y1="41" x2="295" y2="41" stroke="white" stroke-width="2"/>
+<text x="277" y="45" font-family="monospace" font-size="20" fill="white" dominant-baseline="hanging">b</text>
+<text x="363" y="31" font-family="monospace" font-size="20" fill="white" dominant-baseline="hanging">b</text>
+<text x="182" y="93" font-family="monospace" font-size="20" fill="white" dominant-baseline="hanging">a</text>
+<line x1="176" y1="117" x2="200" y2="117" stroke="white" stroke-width="2"/>
+<text x="182" y="121" font-family="monospace" font-size="20" fill="white" dominant-baseline="hanging">b</text>
+<text x="215" y="102" font-family="serif" font-size="30" fill="white">∫</text>
+<text x="233" y="79" font-family="monospace" font-size="20" fill="white" dominant-baseline="hanging">b</text>
+<text x="249" y="79" font-family="monospace" font-size="20" fill="white" dominant-baseline="hanging">dx</text>
+<g transform="scale(0.7)">
+<path d="M 398 116 Q 382 174 398 232" stroke="white" fill="none" stroke-width="2"/>
+<path d="M 494 116 Q 510 174 494 232" stroke="white" fill="none" stroke-width="2"/>
+<text x="410" y="136" font-family="monospace" font-size="20" fill="white" dominant-baseline="hanging">a</text>
+<text x="446" y="122" font-family="monospace" font-size="20" fill="white" dominant-baseline="hanging">a</text>
+<line x1="440" y1="146" x2="464" y2="146" stroke="white" stroke-width="2"/>
+<text x="446" y="150" font-family="monospace" font-size="20" fill="white" dominant-baseline="hanging">b</text>
+<text x="476" y="136" font-family="monospace" font-size="20" fill="white" dominant-baseline="hanging">b</text>
+<text x="410" y="178" font-family="monospace" font-size="20" fill="white" dominant-baseline="hanging">a</text>
+<line x1="404" y1="202" x2="428" y2="202" stroke="white" stroke-width="2"/>
+<text x="410" y="206" font-family="monospace" font-size="20" fill="white" dominant-baseline="hanging">b</text>
+<text x="446" y="192" font-family="monospace" font-size="20" fill="white" dominant-baseline="hanging">b</text>
+<text x="476" y="192" font-family="monospace" font-size="20" fill="white" dominant-baseline="hanging">a</text>
+</g>
+<text x="363" y="107" font-family="monospace" font-size="20" fill="white" dominant-baseline="hanging">a</text>
+</g>
+</svg>
