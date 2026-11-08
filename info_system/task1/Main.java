@@ -21,8 +21,8 @@ public class Main {
 	}
 
 	public static void main(String[] args) throws Exception {
-		MathComponent A = new Symbol("a");
-		MathComponent B = new Symbol("b");
+		MathComponent A = new Leaf("a");
+		MathComponent B = new Leaf("b");
 		MathComponent formula = new Fraction(A, B);
 
 		MathComponent numIndexed = new IndexedElement(B, formula);
@@ -41,7 +41,6 @@ public class Main {
 				{ formula, numIndexed2, A }
 		};
 		MathComponent matrix2 = new Matrix(arr2);
-		MathComponent numIndexed3 = new IndexedElement(matrix, matrix2);
 
 		MathComponent indexed = new IndexedElement(B, matrix2);
 
@@ -55,7 +54,6 @@ public class Main {
 
 		renderSvg(matrix, "matrix.svg");
 		renderSvg(numIndexed2, "numIndexed2.svg");
-		renderSvg(numIndexed3, "numIndexed3.svg");
 		renderSvg(matrix2, "matrix2.svg");
 
 		renderSvg(indexed, "Indexed.svg");

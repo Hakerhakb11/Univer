@@ -1,11 +1,11 @@
 package task1;
 
-public class Symbol implements MathComponent {
+public class Leaf implements MathComponent {
     private final String text;
     private static final int CHAR_WIDTH = 12;
     private static final int HEIGHT = 20;
 
-    public Symbol(String text) {
+    public Leaf(String text) {
         this.text = text;
     }
 

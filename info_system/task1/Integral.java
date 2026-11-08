@@ -13,7 +13,7 @@ public class Integral implements MathComponent {
     }
 
     public Integral(MathComponent body) {
-        this(body, new Symbol("dx"));
+        this(body, new Leaf("dx"));
     }
 
     @Override
