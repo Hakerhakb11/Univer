@@ -1,0 +1,18 @@
+[project]
+name = "kvant"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Hakerhakb11",email = "igorshilov2007@gmail.com"}
+]
+requires-python = ">=3.14"
+dependencies = [
+    "qiskit (>=2.6.2,<3.0.0)",
+    "qiskit-aer (>=0.18.2,<0.19.0)",
+    "matplotlib (>=3.11.2,<4.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
