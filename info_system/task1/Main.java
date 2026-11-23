@@ -46,18 +46,7 @@ public class Main {
 
 		MathComponent integral = new Integral(B);
 
-		renderSvg(formula, "formula.svg");
-		renderSvg(A, "symbolA.svg");
-		renderSvg(B, "symbolB.svg");
-
-		renderSvg(numIndexed, "numIndexed.svg");
-
-		renderSvg(matrix, "matrix.svg");
-		renderSvg(numIndexed2, "numIndexed2.svg");
 		renderSvg(matrix2, "matrix2.svg");
 
-		renderSvg(indexed, "Indexed.svg");
-
-		renderSvg(integral, "integral.svg");
 	}
 }

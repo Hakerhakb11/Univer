@@ -37,15 +37,15 @@ public class View2 implements Observer {
                     <text x="35" y="70"  fill="white" font-size="10" text-anchor="end">75%%</text>
                     <text x="35" y="20"  fill="white" font-size="10" text-anchor="end">100%%</text>
 
-                    <rect x="55" y="%d" width="60" height="%d" fill="#66CCFF" stroke="white"/>
+                    <rect x="55" y="%d" width="60" height="%d" fill="#66CCFF"/>
                     <text x="85" y="240" fill="white" text-anchor="middle" font-size="12">a</text>
                     <text x="85" y="%d" fill="white" text-anchor="middle" font-size="10">%d%%</text>
 
-                    <rect x="135" y="%d" width="60" height="%d" fill="#66FF66" stroke="white"/>
+                    <rect x="135" y="%d" width="60" height="%d" fill="#66FF66"/>
                     <text x="165" y="240" fill="white" text-anchor="middle" font-size="12">b</text>
                     <text x="165" y="%d" fill="white" text-anchor="middle" font-size="10">%d%%</text>
 
-                    <rect x="215" y="%d" width="60" height="%d" fill="#FF6666" stroke="white"/>
+                    <rect x="215" y="%d" width="60" height="%d" fill="#FF6666"/>
                     <text x="245" y="240" fill="white" text-anchor="middle" font-size="12">c</text>
                     <text x="245" y="%d" fill="white" text-anchor="middle" font-size="10">%d%%</text>
                 </svg>

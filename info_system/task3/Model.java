@@ -11,6 +11,7 @@ public class Model {
         this.a = a;
         this.b = b;
         this.c = c;
+        normalize();
     }
 
     public int getA() {

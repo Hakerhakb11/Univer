@@ -60,12 +60,19 @@ public class View3 implements ViewElement {
         int tx = (int) (cx + (r * 0.6) * Math.cos(Math.toRadians(midAngle)));
         int ty = (int) (cy + (r * 0.6) * Math.sin(Math.toRadians(midAngle)));
 
+        int largeArc;
+        if (percent > 50) {
+            largeArc = 1;
+        } else {
+            largeArc = 0;
+        }
+
         return String.format(
                 """
-                        <path d="M %d,%d L %d,%d A %d,%d 0 1 1 %d,%d Z" fill="%s" stroke="white" stroke-width="1.5"/>
+                        <path d="M %d,%d L %d,%d A %d,%d 0 %d 1 %d,%d Z" fill="%s" stroke="white" stroke-width="1.5"/>
                         <text x="%d" y="%d" text-anchor="middle" dominant-baseline="central" font-size="12" fill="black">%s (%d%%)</text>
                         """,
-                cx, cy, x1, y1, r, r, x2, y2, color,
+                cx, cy, x1, y1, r, r, largeArc, x2, y2, color,
                 tx, ty, label, percent);
     }
 

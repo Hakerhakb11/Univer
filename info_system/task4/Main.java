@@ -48,26 +48,14 @@ public class Main {
 		matrix2.printCoordinates();
 
 		System.out.println("---------------------------------\n");
-		simulateClick(matrix1, 62, 35, RequestType.HELP);
 		simulateClick(matrix1, 62, 50, RequestType.PRINT);
 		simulateClick(matrix1, 38, 45, RequestType.PRINT);
-		simulateClick(matrix1, 131, 52, RequestType.HELP);
-		simulateClick(matrix1, 500, 500, RequestType.HELP);
 
 		simulateClick(matrix2, 60, 127, RequestType.HELP);
 
-		simulateClick(matrix2, 110, 115, RequestType.HELP);
-
-		simulateClick(matrix2, 131, 120, RequestType.HELP);
-
-		simulateClick(matrix2, 131, 131, RequestType.PRINT);
-
-		simulateClick(matrix2, 50, 175, RequestType.PRINT);
-
-		simulateClick(matrix2, 78, 175, RequestType.HELP);
-
 		simulateClick(matrix2, 90, 150, RequestType.PRINT);
 
+		simulateClick(matrix1, 62, 35, RequestType.HELP);
 		simulateClick(matrix1, 62, 35, RequestType.PRINT);
 
 	}
