@@ -1,7 +1,7 @@
 import random
 
 
-def printMatrix(matrix: list[list[int]]) -> None:
+def printMatrix(matrix: list[list[int]]):
     for row in matrix:
         template = "{:>4}" * len(row)
         print(template.format(*row))

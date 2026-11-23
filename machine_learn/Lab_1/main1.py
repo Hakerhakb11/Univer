@@ -1,27 +1,14 @@
-string = 'Pyth1abch2hon'
+string = "Pyth1abch2hon"
 
-new_string: str = ""
+first_index = string.find("h")
 
-for index, char in enumerate(string):
-    if char == "h":
-        break
+last_index = string.rfind("h")
 
-first_index = index
+start = string[: first_index + 1]
+middle = string[first_index + 1 : last_index]
+end = string[last_index:]
 
-string2 = string[::-1]
+middle = middle[::-1]
+result = start + middle + end
 
-
-for index, char in enumerate(string2):
-    if char == "h":
-        break
-
-
-print(first_index)
-print(index)
-
-print(string)
-
-index = len(string) - 1 - index
-result = string[first_index + 1 : index]
-result = result[::-1]
 print(result)
